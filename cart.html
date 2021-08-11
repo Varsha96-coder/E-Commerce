@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <!--<a href="#home" class="active">Logo</a>-->
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <div class = "logo">Made4uhtrendy</div>
+        <div class = "search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        
+        <div class = "login"><i class="fa fa-fw fa-user"></i><a href="#" > Login</a></div>
+        <div class = "carts"><i class="fa fa-shopping-cart"></i> <a href="cart.html" >Cart</a></div>
+    </div> 
+
+    <div id="items">
+        <a href = "">Men's Clothes</a>
+        <a href = "">Women's Clothes</a>
+    </div>
+
+    <div class="main">
+
+        <h1>ITEMS IN YOUR CART</h1>
+        <hr><br><br><br>
+        <div class="section">
+            <div class="choice"><img src="gown2.jpg"></div>
+            <div class="details"> Wedding Designer Fashion Gown </div>
+            <div class="quantity">
+                <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+                <img src="pl_minus.PNG">
+            </div>
+            <div class="price">Rs.1100</div>
+        </div>
+        <div class="section">
+            <div class="choice"><img src="sar3.webp"></div>
+            <div class="details"> Designer Saree</div>
+            <div class="quantity">
+                <img src="pl_minus.PNG">
+            </div>
+            <div class="price">Rs.1100</div>
+        </div>
+        <div class="section">
+            <div class="choice"><img src="gown1.jpg"></div>
+            <div class="details"> Wedding Designer Fashion Gown </div>
+            <div class="quantity">
+                <img src="pl_minus.PNG">
+            </div>
+            <div class="price">Rs.1100</div>
+        </div>
+        <div class="section">
+            <div class="choice"><img src="top2.jpg"></div>
+            <div class="details"> Fancy Top</div>
+            <div class="quantity">
+                <img src="pl_minus.PNG">
+            </div>
+            <div class="price">Rs.1100</div>
+        </div>
+        <div class="section">
+            <div class="choice"><img src="Mm1.jpg"></div>
+            <div class="details"> Cool Blazer</div>
+            <div class="quantity">
+                <img src="pl_minus.PNG">
+            </div>
+            <div class="price">Rs.1100</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info Slides">
+            <h3>INFORMATION</h3><br>
+            ABOUT US<br><br>
+            CUSTOMER SPEAK<br><br>
+            FAQ<br><br>
+            CONTACT US
+        </div>
+        <div class="terms Slides">
+            <h3>TERMS & CONDITIONS</h3><br>
+            PRIVACY POLICY<br><br>
+            SHIPPING & RETURNS<br><br>
+            BLOG
+        </div>
+        <div class="mail slides">
+          <form method="post" action="">
+            <input type="email" placeholder="Enter E-mail"><br><br>
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+    </div>
+    <div class="bottom">&#169 2021. All Rights Reserved.</div>
+
+    <script>
+        function myFunction() {
+                var x = document.getElementById("items");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                x.style.display = "block";
+                }
+            }
+
+            var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides2 = document.getElementsByClassName("Slides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides2.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides2.length}
+        for (i = 0; i < slides2.length; i++) {
+            slides2[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        
+        dots[slideIndex-1].className += " active";
+        slides2[slideIndex-1].style.display = "block";  
+      }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 436px) {
+  body .topnav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(41, 40, 40);
+  }   
+  body .topnav .logo {
+    font-size: 25px;
+    padding-top: 13px;
+    width: 200px;
+    height: 50px;
+  }
+  body .topnav a.icon {
+    display: block;
+    color: white;
+    padding: 17px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  body .topnav .search-container {
+    margin-left: 50px;
+  }
+  body .topnav input{
+    display: none;
+  }
+
+  body .topnav .login{
+    margin-left: 5px;
+  }
+  body .topnav .login a{
+    display: none;
+  }
+  body .topnav .carts{
+    margin-left: 5px;
+  }
+  body .topnav .carts a{
+    display: none;
+  }
+  body #items {
+    width: 150px;
+    height: 70px;
+    background-color: rgb(41, 40, 40);
+    display: none;
+    padding: 0;
+  } 
+  body #items a{
+    color: white;
+    font-size: 15px;
+    margin: auto;
+    padding: 10px;
+    display: block;
+  }
+
+  body .slider{
+    height: 315px;
+  }
+  body .back_img{
+    height: 300px;
+  }
+  body .back_img img {
+    height: 300px;
+  }
+  body .catlog {
+    display: block;
+    height: auto;
+  }
+
+  body .footer{
+    display: block;
+    height: auto;
+    position: relative;
+  }
+
+  body .footer div{
+    padding: 30px;
+  }
+
+  body .footer .Slides {
+    display: none;
+  }
+  
+  body .footer .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  body .footer .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  body .catlog .dress{
+    width: 300px;
+    height: 410px;
+    margin: auto;
+  }
+  body .catlog .dress img{
+    width: 280px;
+    height: 330px;
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+  .topnav {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(41, 40, 40);
+    display: flex;
+  } 
+  .topnav .icon {
+    display: none;
+  }
+  .topnav .logo {
+    color: white;
+    font-size: 45px;
+    font-style: italic;
+    width: 500px;
+    height: 50px;
+    margin-left: 50px;
+  }
+
+  .topnav .search-container {
+    float: right;
+    display: flex;
+    margin-left: 250px;
+  }
+  .topnav input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  .topnav .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: rgb(41, 40, 40);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .topnav .search-container button i {
+    color: white;
+    padding: 5px;
+  }
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  .topnav .login{
+    float:right;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 25px;
+    width:180px;
+  }
+  .topnav .login a{
+    color: white;
+  }
+  .topnav .carts{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    width: 180px;
+  }
+  .topnav .carts a{
+    color: white;
+  }
+  /*.topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+     /* display: none;
+    }*/
+  
+/*----------------------------------------------------------------*/
+  #items {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(173, 89, 89);
+    display: flex;
+  } 
+  #items a{
+    color: white;
+    margin-left: 100px;
+    font-size: 18px;
+    padding: 17px;
+  }
+
+/*---------------------------------------------------------------*/
+  .slider{
+    background-color: rgba(27,31,34,0.85);
+    width: 100%;
+    height: 515px;
+  }
+  .back_img{
+    background-color: rgba(27,31,34,0.85);
+    max-width: 1000px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+  }
+  .back_img .mySlides {
+    display: none;
+  }
+  .back_img img {
+    vertical-align: middle;
+    height: 500px;
+  }
+
+/* Next & previous buttons */
+  .back_img .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .back_img .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .back_img .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .back_img .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .back_img .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .back_img .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .back_img .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .back_img .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    body .back_img .prev, .next,.text {font-size: 11px}
+  }
+
+  .bestsell {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    padding-top: 6px;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .new {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    padding-top: 6px;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .catlog {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 500px;
+    display: flex;
+  }
+  .catlog .dress{
+    width: 300px;
+    height: 410px;
+    margin: auto;
+  }
+  .catlog .dress img{
+    width: 300px;
+    height: 350px;
+  }
+  .catlog .dress .to_cart{
+    background-color: rgb(46, 44, 44);
+    width:150px;
+    height: 50px;
+    color: honeydew;
+  }
+
+
+  .footer{
+    background-color: indianred;
+    width: 100%;
+    height: 250px;
+    display:flex;
+  }
+
+  .footer div{
+    width: 300px;
+    height: 300px;
+    padding:50px;
+    margin: auto;
+  }
+
+  .footer .mail form{
+    width:280px;
+    height: 280px;
+    display: block;
+  }
+  .footer .mail form input{
+    width: 200px;
+    height: 50px;
+  }
+  .footer .mail form button{
+    background-color: rgb(56, 50, 50);
+    width: 200px;
+    height: 50px;
+    color: honeydew;
+  }
+
+  .bottom {
+    background-color: rgb(37, 32, 32);
+    width:100%;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    color: ivory;
+  }
+
+  

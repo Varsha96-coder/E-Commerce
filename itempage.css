@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 436px) {
+    body .topnav {
+      width: 100%;
+      height: 50px;
+      background-color: rgb(41, 40, 40);
+    }   
+    body .topnav .logo {
+      font-size: 25px;
+      padding-top: 13px;
+      width: 200px;
+      height: 50px;
+    }
+    body .topnav a.icon {
+      display: block;
+      color: white;
+      padding: 17px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  
+    body .topnav .search-container {
+      margin-left: 50px;
+    }
+    body .topnav input{
+      display: none;
+    }
+  
+    body .topnav .login{
+      margin-left: 5px;
+    }
+    body .topnav .login a{
+      display: none;
+    }
+    body .topnav .carts{
+      margin-left: 5px;
+    }
+    body .topnav .carts a{
+      display: none;
+    }
+    body #items {
+      width: 150px;
+      height: 70px;
+      background-color: rgb(41, 40, 40);
+      display: none;
+      padding: 0;
+    } 
+    body #items a{
+      color: white;
+      font-size: 15px;
+      margin: auto;
+      padding: 10px;
+      display: block;
+    }
+    body .main{
+      height: auto;
+    }
+    body .main .section{
+        display: block;
+    }
+    body .footer{
+        display: block;
+        height: auto;
+      }
+    
+      body .footer div{
+        padding: 30px;
+      }  
+
+      body .footer .Slides {
+        display: none;
+      }
+      
+      body .footer .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      body .footer .active, .dot:hover {
+        background-color: #717171;
+      }
+  }
+
+  /*-------------------------------------------------------------------------------------------------------------------------------*/
+  .topnav {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(41, 40, 40);
+    display: flex;
+  } 
+  .topnav .icon {
+    display: none;
+  }
+  .topnav .logo {
+    color: white;
+    font-size: 45px;
+    font-style: italic;
+    width: 500px;
+    height: 50px;
+    margin-left: 50px;
+  }
+
+  .topnav .search-container {
+    float: right;
+    display: flex;
+    margin-left: 250px;
+  }
+  .topnav input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  .topnav .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: rgb(41, 40, 40);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .topnav .search-container button i {
+    color: white;
+    padding: 5px;
+  }
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  .topnav .login{
+    float:right;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 25px;
+    width:180px;
+  }
+  .topnav .login a{
+    color: white;
+  }
+  .topnav .carts{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    width: 180px;
+  }
+  .topnav .carts a{
+    color: white;
+  }
+  /*.topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+     /* display: none;
+    }*/
+  
+/*----------------------------------------------------------------*/
+  #items {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(173, 89, 89);
+    display: flex;
+  } 
+  #items a{
+    color: white;
+    margin-left: 100px;
+    font-size: 18px;
+    padding: 17px;
+  }
+/*----------------------------------------------------------------*/
+.main {
+    width: 1000px;
+    margin: auto;
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: 700px;
+  }
+.main h1 {
+    font-size: 50px;
+    word-break: break-all;
+ }
+.main .section{
+    display: flex;
+}
+.main .look{
+    width:400px;
+    height: 500px;
+}
+.main .look img{
+    width: 400px;
+    height: 500px;
+    opacity: 1;
+}
+.main .details{
+    width:600px;
+    height: 500px;
+    padding:30px;
+    text-align: justify;
+}
+.main .details .to_cart{
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+.main .details button i{
+    font-size: 40px;
+}
+.main .details .to_buy{
+    background-color: rgb(46, 44, 44);
+    width:150px;
+    height: 50px;
+    color: honeydew;
+}
+/*----------------------------------------------------------------*/
+.footer{
+    background-color: indianred;
+    width: 100%;
+    height: 300px;
+    display:flex;
+  }
+
+  .footer div{
+    width: 300px;
+    height: 300px;
+    padding:50px;
+    margin: auto;
+  }
+
+  .footer .mail form{
+    width:280px;
+    height: 280px;
+    display: block;
+  }
+  .footer .mail form input{
+    width: 200px;
+    height: 50px;
+  }
+  .footer .mail form button{
+    background-color: rgb(56, 50, 50);
+    width: 200px;
+    height: 50px;
+    color: honeydew;
+  }
+
+  .bottom {
+    background-color: rgb(37, 32, 32);
+    width:100%;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    color: ivory;
+  }
